@@ -1,0 +1,25 @@
+@media(max-width: 700px){
+    .down-footer{
+        flex-direction: column-reverse;
+        height: auto;
+        gap: 10px;
+    }
+    .up-footer{
+        flex-direction: column;
+        height: auto;
+        gap: 10px;
+        justify-content: center;
+    }
+    .up-footer{
+        /* width: ; */
+        height: auto;
+        padding: 0%;
+    }
+    .up-footer-left p{
+        width: 200px;
+    }
+
+    .up-footer-right{
+        width: auto;
+    }
+}

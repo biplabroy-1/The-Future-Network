@@ -6,11 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="./icon.png" type="image/png">
   <title>The Future Network</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/dist/boxicons.js' rel='stylesheet'>
+  <link rel="stylesheet" href="./css/mobile.footer.css">
   <link rel="stylesheet" href="./css/costom.hover.css">
   <link rel="stylesheet" href="./css/costom.logo.css">
   <link rel="stylesheet" href="./css/costom.css">
   <link rel="stylesheet" href="./css/main.css">
-  <link rel="stylesheet" href="./css/mobile.footer.css">
+  <link rel="stylesheet" href="./css/new.scss">
 </head>
 
 <body>
@@ -64,22 +66,22 @@
           </a>
         </h2>
         <div class="flex gap-10">
-          <a class="style-6" href="" data-text="Our philosophy">
+          <a class="navbar-hover" href="" data-text="Our philosophy">
             <span>Our philosophy</span>
           </a>
-          <a class="style-6" href="" data-text="Nuro markating">
+          <a class="navbar-hover" href="" data-text="Nuro markating">
             <span>Nuro markating</span>
           </a>
-          <a class="style-6 text-xl" href="" data-text="AGI">
+          <a class="navbar-hover" href="" data-text="AGI">
             <span>AGI</span>
           </a>
-          <a class="style-6" href="" data-text="Cognitive Computing">
+          <a class="navbar-hover" href="" data-text="Cognitive Computing">
             <span>Cognitive Computing</span>
           </a>
-          <a class="style-6" href="" data-text="Lern">
+          <a class="navbar-hover" href="" data-text="Lern">
             <span>Lern</span>
           </a>
-          <a class="style-6" href="" data-text="Contact Us">
+          <a class="navbar-hover" href="" data-text="Contact Us">
             <span>Contact Us</span>
           </a>
         </div>
@@ -89,16 +91,19 @@
             <path d="M32 96v64h448V96H32zm0 128v64h448v-64H32zm0 128v64h448v-64H32z"></path>
           </svg></button>
       </nav>
-      <video class="w-screen h-screen object-cover" src="./assets/backGround.mp4" playsinline autoplay muted loop>
+      <video class="w-screen h-screen object-cover brightness-75" src="./assets/backGround.mp4" playsinline autoplay
+        muted loop>
       </video>
       <div class="absolute top-1/2 pl-20 text-white">
         <h1 class="uppercase my-5 ">RECENT LAUNCH</h1>
         <h1 class="uppercase my-5 text-4xl font-bold">GALILEO L12 MISSION</h1>
-        <button class="my-5 border-2 px-10 py-5 font-semibold">REWATCH</button>
+        <button
+          class="my-5 border-2 border-white px-10 py-5 font-semibold hover:bg-white hover:text-black duration-300 hover:rounded-lg">REWATCH</button>
       </div>
 
 
-      <button onclick="next()" class="p-4 grid place-items-center absolute top-[93%] left-1/2 -translate-x-1/2">
+      <button onclick="next()"
+        class="p-4 grid place-items-center absolute top-[93%] left-1/2 -translate-x-1/2 animate-pulse">
         <svg width="38" height="22" viewBox="0 0 38 22" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
             d="M17.2521 20.9419C18.2284 21.9182 19.8114 21.9182 20.7877 20.9419L36.6976 5.03199C37.6739 4.05568 37.6739 2.47277 36.6976 1.49646C35.7213 0.520145 34.1383 0.520145 33.162 1.49646L19.0199 15.6386L4.87776 1.49646C3.90145 0.520145 2.31854 0.520145 1.34223 1.49646C0.365917 2.47277 0.365917 4.05568 1.34223 5.03199L17.2521 20.9419ZM16.5199 15.9999V19.1741H21.5199V15.9999H16.5199Z"
@@ -209,6 +214,15 @@
   </main>
 
 
+
+
+
+
+
+
+
+
+
   <section class="my-24">
     <div class="b-section">
       <div class="b-section-marquee-box">
@@ -219,6 +233,15 @@
       </div>
     </div>
   </section>
+
+
+
+
+
+
+
+
+
 
   <section class="flex justify-center items-center  h-screen bg-white my-20">
     <div class="container mx-auto my-4 px-4 lg:px-20">
@@ -238,7 +261,7 @@
         </div>
         <div class="my-4">
           <textarea placeholder="Message*"
-            class="w-full h-32 bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"></textarea>
+            class="w-full min-h-32 bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"></textarea>
         </div>
         <div class="my-2 w-1/2 lg:w-1/4">
           <button class="uppercase text-sm font-bold tracking-wide bg-blue-900 text-gray-100 p-3 rounded-lg w-full 
@@ -330,7 +353,7 @@
 
   <!-- footer -->
 
-  <div class="bg-slate-800 text-white flex justify-around h-auto items-center h-auto">
+  <div class="bg-slate-800 text-white flex justify-around items-center h-auto">
     <div class='w-4/5 flex up-footer'>
       <div class='w-1/4 m-8 up-footer-left'>
         <p class='text-gray-600'>Have any query or want to collablarate? Rech us out : </p>
@@ -407,36 +430,39 @@
   </div>
 
   <div class="bg-slate-900 text-white flex justify-around h-14 items-center down-footer">
-    <p class='text-gray-600 down-footer-left'>FutureNetwork&copy;2024</p>
+    <p class='text-gray-600 down-footer-left'>FutureNetwork &copy;2024</p>
+    <div class="center gap-2 text-gray-600">
+      <p>Made With </p><box-icon name='heart' type='solid' color='#f80a25'></box-icon></box-icon>
+    </div>
     <div class="flex gap-2 down-footer-right">
       <!-- Facebook Icon  -->
       <a href="https://www.facebook.com/" target="_blank" rel="noreferrer noopener"
-        class="h-12 w-12 grid place-items-center">
+        class="h-12 w-12 grid place-items-center hover:scale-125">
         <box-icon type='logo' name='facebook-circle' color='#758599'></box-icon>
       </a>
       <!-- XIcon -->
-      <a href="https://twitter.com/" target="_blank" rel="noreferrer noopener" 
-        class="h-12 w-12 grid place-items-center">
+      <a href="https://twitter.com/" target="_blank" rel="noreferrer noopener"
+        class="h-12 w-12 grid place-items-center hover:scale-125">
         <box-icon type='logo' name='twitter' color='#758599'></box-icon>
-      </a>      
+      </a>
       <!-- InstagramIcon -->
-      <a href="https://instagram.com/" target="_blank" rel="noreferrer noopener" 
-        class="h-12 w-12 grid place-items-center">
-        <box-icon name='instagram' type='logo' color='#758599' ></box-icon>
-      </a>      
+      <a href="https://instagram.com/" target="_blank" rel="noreferrer noopener"
+        class="h-12 w-12 grid place-items-center hover:scale-125">
+        <box-icon name='instagram' type='logo' color='#758599'></box-icon>
+      </a>
       <!-- LinkedInIcon -->
       <a href="https://www.linkedin.com/company/the-future-network-ai/" target="_blank" rel="noreferrer noopener"
-        class="h-12 w-12 grid place-items-center">
+        class="h-12 w-12 grid place-items-center hover:scale-125">
         <box-icon name='linkedin' type='logo' color='#758599'></box-icon>
       </a>
       <!-- TelegramIcon -->
       <a href="https://www.telegram.com/" target="_blank" rel="noreferrer noopener"
-        class="h-12 w-12 grid place-items-center">
+        class="h-12 w-12 grid place-items-center hover:scale-125">
         <box-icon type='logo' name='telegram' color='#758599'></box-icon>
       </a>
       <!-- GitHubIcon  -->
       <a href="https://www.github.com/" target="_blank" rel="noreferrer noopener"
-        class="h-12 w-12 grid place-items-center">
+        class="h-12 w-12 grid place-items-center hover:scale-125">
         <box-icon type='logo' name='github' color='#758599'></box-icon>
       </a>
     </div>
@@ -453,7 +479,6 @@
     <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
     <button type="button" onclick="submitForm()">Submit</button>
   </form>
-
   <div id="response"></div> -->
   <script src="./js/script.js"></script>
   <script src="./js/script1.js"></script>

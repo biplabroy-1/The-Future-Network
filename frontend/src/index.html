@@ -91,7 +91,7 @@
             <path d="M32 96v64h448V96H32zm0 128v64h448v-64H32zm0 128v64h448v-64H32z"></path>
           </svg></button>
       </nav>
-      <video class="w-screen h-screen object-cover brightness-75" src="./assets/backGround.mp4" playsinline autoplay
+      <video class="w-screen h-screen object-cover brightness-50" src="./assets/backGround.mp4" playsinline autoplay
         muted loop>
       </video>
       <div class="absolute top-1/2 pl-20 text-white">
@@ -243,11 +243,11 @@
 
 
 
-
-  <section class="flex justify-center items-center h-screen bg-white my-20">
-    <div class="container mx-auto my-4 px-4 lg:px-20">
+<!-- form  -->
+  <section class="flex justify-center items-center h-screen bg-gradient-to-br from-blue-500 via-blue-700 to-indigo-900 h-full">
+    <div class="container mx-auto my-4 px-4 lg:px-20 ">
       <form data-aos="zoom-in"
-        class="w-full p-8 my-4 md:px-12 lg:w-9/12 lg:pl-20 lg:pr-40 mr-auto rounded-2xl shadow-2xl">
+        class="w-full p-8 my-4 md:px-12 lg:w-9/12 mr-auto rounded-2xl shadow-2xl shadow-lg bg-white bg-opacity-25">
         <div class="flex">
           <h1 class="font-bold uppercase text-5xl">Send us a <br /> message</h1>
         </div>
@@ -289,36 +289,6 @@
   </form>
   <div id="response"></div> -->
 
-
-
-
-      <!-- contact info -->
-      <div data-aos="zoom-in" class="w-full lg:-mt-96 lg:w-2/6 px-8 py-12 ml-auto bg-blue-900 rounded-2xl">
-        <div class="flex flex-col text-white">
-          <h1 class="font-bold uppercase text-4xl my-4">Drop in our office</h1>
-          <p class="text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-            tincidunt arcu diam,
-            eu feugiat felis fermentum id. Curabitur vitae nibh viverra, auctor turpis sed, scelerisque ex.
-          </p>
-          <div class="flex my-4 w-2/3 lg:w-1/2">
-            <div class="flex flex-col">
-            </div>
-            <div class="flex flex-col">
-              <h2 class="text-2xl">Main Office</h2>
-              <p class="text-gray-400">5555 Tailwind RD, Pleasant Grove, UT 73533</p>
-            </div>
-          </div>
-          <div class="flex my-4 w-2/3 lg:w-1/2">
-            <div class="flex flex-col">
-            </div>
-            <div class="flex flex-col">
-              <h2 class="text-2xl">Call Us</h2>
-              <p class="text-gray-400">Tel: xxx-xxx-xxx</p>
-              <p class="text-gray-400">Fax: xxx-xxx-xxx</p>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   </section>
 
@@ -372,8 +342,8 @@
   <!-- footer -->
 
   <div class="bg-slate-800 text-white flex justify-around items-center h-auto overflow-hidden">
-    <div class='w-4/5 flex up-footer'>
-      <div class='w-1/4 m-8 up-footer-left'>
+    <div data-aos="fade-up" class='w-4/5 flex up-footer'>
+      <div  class='w-1/4 m-8 up-footer-left'>
         <p class='text-gray-600'>Have any query or want to collablarate? Rech us out : </p>
         <div class='flex items-center text-gray-600 p-2'>
           <!-- Location Icon  -->
@@ -447,14 +417,14 @@
     </div>
   </div>
 
-  <div class="bg-slate-900 text-white flex justify-around h-14 items-center down-footer">
+  <div class="bg-slate-900 text-white flex justify-around h-auto items-center down-footer">
     <p class='text-gray-600 down-footer-left'>FutureNetwork &copy;2024</p>
     <div class="center gap-2 text-gray-600">
       <p>Made With </p><box-icon name='heart' type='solid' color='#f80a25'></box-icon></box-icon>
     </div>
     <div class="flex gap-2 down-footer-right">
       <!-- Facebook Icon  -->
-      <a href="https://www.facebook.com/" target="_blank" rel="noreferrer noopener"
+      <a href="https://www.facebook.com/profile.php?id=100093831792720" target="_blank" rel="noreferrer noopener"
         class="h-12 w-12 grid place-items-center hover:scale-125">
         <box-icon type='logo' name='facebook-circle' color='#758599'></box-icon>
       </a>

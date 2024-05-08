@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="./icon.png" type="image/png">
   <title>The Future Network</title>
-  <link href='https://unpkg.com/boxicons@2.1.4/dist/boxicons.js' rel='stylesheet'>
+
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="./css/mobile.footer.css">
   <link rel="stylesheet" href="./css/costom.hover.css">
@@ -246,32 +246,50 @@
 
   <section class="flex justify-center items-center h-screen bg-white my-20">
     <div class="container mx-auto my-4 px-4 lg:px-20">
-      <div data-aos="zoom-in"
+      <form data-aos="zoom-in"
         class="w-full p-8 my-4 md:px-12 lg:w-9/12 lg:pl-20 lg:pr-40 mr-auto rounded-2xl shadow-2xl">
         <div class="flex">
           <h1 class="font-bold uppercase text-5xl">Send us a <br /> message</h1>
         </div>
         <div class="grid grid-cols-1 gap-5 md:grid-cols-2 mt-5">
           <input class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-            type="text" placeholder="First Name*" />
+            type="text" placeholder="First Name*" name="first_name" required />
           <input class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-            type="text" placeholder="Last Name*" />
+            type="text" placeholder="Last Name*" name="last_name" required />
           <input class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-            type="email" placeholder="Email*" />
+            type="email" placeholder="Email*" name="email" required />
           <input class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-            type="number" placeholder="Phone*" />
+            type="number" placeholder="Phone*" name="phone" required />
         </div>
         <div class="my-4">
           <textarea placeholder="Message*"
-            class="w-full min-h-32 bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"></textarea>
+            class="w-full min-h-32 bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+            name="message" required></textarea>
         </div>
-        <div class="my-2 w-1/2 lg:w-1/4">
-          <button class="uppercase text-sm font-bold tracking-wide bg-blue-900 text-gray-100 p-3 rounded-lg w-full 
-                        focus:outline-none focus:shadow-outline">
+        <div class="my-2 w-1/2 lg:w-1/4 ">
+          <button type="submit" id="sendMessageBtn"
+            class="border uppercase text-sm font-bold tracking-wide bg-blue-900 text-gray-100 p-3 rounded-lg w-full hover:bg-transparent hover:text-blue-900 hover:border-blue-900">
             Send Message
           </button>
+          <div class="mt-2 ml-4" id="response">
+            <pre> </pre>
+          </div>
         </div>
-      </div>
+      </form>
+
+
+
+      <!-- <h2>Contact Me</h2>
+  <form id="contactForm">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+    <button type="button" onclick="submitForm()">Submit</button>
+  </form>
+  <div id="response"></div> -->
+
+
 
 
       <!-- contact info -->
@@ -471,15 +489,7 @@
 
 
 
-  <!-- <h2>Contact Me</h2>
-  <form id="contactForm">
-    <label for="name">Name:</label><br>
-    <input type="text" id="name" name="name" required><br><br>
-    <label for="message">Message:</label><br>
-    <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
-    <button type="button" onclick="submitForm()">Submit</button>
-  </form>
-  <div id="response"></div> -->
+
 
 
 

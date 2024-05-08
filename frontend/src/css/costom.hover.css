@@ -1,4 +1,7 @@
-.style-6 {
+/* navbar hover */
+
+
+.navbar-hover {
     position: relative;
     overflow: hidden;
     line-height: 2;
@@ -20,7 +23,7 @@
     }
 
     &:before {
-        content: "";      
+        content: "";
         top: calc(100% - 5px);
         transform-origin: 100% 50%;
         transform: scale3d(0, 1, 1);

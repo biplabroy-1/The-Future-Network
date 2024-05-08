@@ -1,7 +1,10 @@
+* {
+    transition: all 300ms;
+}
+
 .navbar {
     background-color: rgba(0, 0, 0, 0.355);
 }
-
 
 .b-section-marquee-box {
     height: 180px;
@@ -39,17 +42,29 @@
 
 
 .hide-scroll {
-
     scrollbar-width: none;
     /* Firefox */
     -ms-overflow-style: none;
     /* Internet Explorer and Edge */
 }
 
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 
 
+/* Remove spinner arrows from number input */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
 
-
-
+input[type=number] {
+    -moz-appearance: textfield;
+    /* Firefox */
+}

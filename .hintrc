@@ -6,8 +6,20 @@
     "axe/name-role-value": [
       "default",
       {
-        "button-name": "off"
+        "button-name": "off",
+        "link-name": "off"
       }
     ]
-  }
+  },
+  "browserslist": [
+    "defaults",
+    "not ie 11",
+    "not and_chr <= 120",
+    "not chrome <= 120",
+    "not edge <= 120",
+    "not ios_saf <= 17.2",
+    "not opera <= 106",
+    "not safari <= 17.2",
+    "not samsung <= 23"
+  ]
 }

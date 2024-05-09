@@ -10,3 +10,13 @@ function next() {
     nextElement.scrollIntoView({ behavior: "smooth" });
 }
 
+let typed = new Typed('.typed-work', {
+    strings: [
+        'ADVANCING HUMAN SPACEFLIGHT',
+        'STARLINK MISSION',
+        'TO MAKE LIFE MULTIPLANETARY',
+        `STARSHIP'S THIRD FLIGHT TEST`
+    ],
+    typeSpeed: 30,
+});
+

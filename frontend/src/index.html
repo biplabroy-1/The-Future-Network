@@ -18,9 +18,10 @@
 <body>
   <main class="min-h-screen">
     <header class="overflow-hidden relative">
-      <nav class="text-white fixed w-screen px-20 h-24 navbar flex justify-between items-center z-10">
+      <nav data-aos="slide-down"
+        class="text-white fixed w-screen px-20 h-24 navbar flex justify-between items-center z-10">
         <h2 class="text-2xl">
-          <a href="">
+          <a href="#">
             <svg width="182" height="55" viewBox="0 0 182 55" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M165.284 54.532H165.212C164.684 54.532 164.024 54.052 163.232 53.092C162.44 52.108 162.044 51.256 162.044 50.536C162.044 49.792 162.74 46.504 164.132 40.672C165.548 34.84 166.256 31.156 166.256 29.62C166.256 28.66 166.604 28.18 167.3 28.18C167.876 28.18 168.572 28.756 169.388 29.908C170.204 31.036 170.612 32.116 170.612 33.148C170.612 33.772 170.3 35.368 169.676 37.936C171.644 35.32 173.492 33.136 175.22 31.384C176.948 29.608 178.124 28.72 178.748 28.72C179.396 28.72 180.044 28.996 180.692 29.548C181.34 30.076 181.664 30.544 181.664 30.952C181.664 31.336 181.052 32.104 179.828 33.256C178.604 34.408 177.092 35.872 175.292 37.648C173.492 39.424 172.1 41.08 171.116 42.616C171.116 44.464 172.184 46.324 174.32 48.196C174.968 48.748 175.832 49.324 176.912 49.924C177.992 50.5 178.832 51.004 179.432 51.436C180.056 51.844 180.368 52.264 180.368 52.696C180.368 53.92 179.504 54.532 177.776 54.532C176.048 54.532 174.188 53.836 172.196 52.444C170.204 51.028 168.716 49.156 167.732 46.828C167.108 48.604 166.724 49.9 166.58 50.716C166.436 51.508 166.328 52.036 166.256 52.3C166.208 52.564 166.16 52.78 166.112 52.948C166.064 53.092 166.016 53.26 165.968 53.452C165.92 53.644 165.872 53.8 165.824 53.92C165.776 54.016 165.728 54.112 165.68 54.208C165.536 54.424 165.404 54.532 165.284 54.532Z"
@@ -114,7 +115,7 @@
       </button>
     </header>
 
-    <section class="my-24">
+    <section data-aos="slide-up" class="my-24">
       <div class="b-section">
         <div class="b-section-marquee-box">
           <h2 class="marquee-text">Our Works •</h2>
@@ -141,7 +142,7 @@
 
 
 
-    <section id="next" class="overflow-x-scroll hide-scroll">
+    <section data-aos="slide-up" id="next" class="overflow-x-scroll hide-scroll">
       <div class="p-24 flex gap-14 w-max">
         <div data-aos="zoom-in" class="max-w-sm rounded overflow-hidden shadow-lg">
           <img class="w-full" src="./assets/icon.png" alt="Sunset in the mountains">
@@ -224,7 +225,7 @@
 
 
 
-  <section class="my-24">
+  <section data-aos="slide-up" class="my-24">
     <div class="b-section">
       <div class="b-section-marquee-box">
         <h2 class="marquee-text">Contact Us •</h2>
@@ -243,11 +244,12 @@
 
 
 
-<!-- form  -->
-  <section class="flex justify-center items-center h-screen bg-gradient-to-br from-blue-500 via-blue-700 to-indigo-900 h-full">
+  <!-- form  -->
+  <section
+    class="flex justify-center items-center h-screen bg-gradient-to-br from-blue-500 via-blue-700 to-indigo-900 h-full">
     <div class="container mx-auto my-4 px-4 lg:px-20 ">
       <form data-aos="zoom-in"
-        class="w-full p-8 my-4 md:px-12 lg:w-9/12 mr-auto rounded-2xl shadow-2xl shadow-lg bg-white bg-opacity-25">
+        class="w-full p-8 my-4 md:px-12 lg:w-9/12 mr-auto rounded-2xl shadow-2xl bg-white bg-opacity-25">
         <div class="flex">
           <h1 class="font-bold uppercase text-5xl">Send us a <br /> message</h1>
         </div>
@@ -268,7 +270,7 @@
         </div>
         <div class="my-2 w-1/2 lg:w-1/4 ">
           <button type="submit" id="sendMessageBtn"
-            class="border uppercase text-sm font-bold tracking-wide bg-blue-900 text-gray-100 p-3 rounded-lg w-full hover:bg-transparent hover:text-blue-900 hover:border-blue-900">
+            class="border border-blue-900 uppercase text-sm font-bold tracking-wide bg-blue-900 text-gray-100 p-3 rounded-lg w-full sendbtn">
             Send Message
           </button>
           <div class="mt-2 ml-4" id="response">
@@ -343,7 +345,7 @@
 
   <div class="bg-slate-800 text-white flex justify-around items-center h-auto overflow-hidden">
     <div data-aos="fade-up" class='w-4/5 flex up-footer'>
-      <div  class='w-1/4 m-8 up-footer-left'>
+      <div class='w-1/4 m-8 up-footer-left'>
         <p class='text-gray-600'>Have any query or want to collablarate? Rech us out : </p>
         <div class='flex items-center text-gray-600 p-2'>
           <!-- Location Icon  -->

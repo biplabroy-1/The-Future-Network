@@ -2,6 +2,12 @@
     transition: all 300ms;
 }
 
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .navbar {
     background-color: rgba(0, 0, 0, 0.355);
 }
@@ -48,11 +54,7 @@
     /* Internet Explorer and Edge */
 }
 
-.center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 
 
 
@@ -67,4 +69,10 @@ input[type=number]::-webkit-outer-spin-button {
 input[type=number] {
     -moz-appearance: textfield;
     /* Firefox */
+}
+
+.sendbtn:hover {
+    background-color: transparent;
+    border: 1px solid rgb(30 58 138);
+    color: rgb(30 58 138);
 }

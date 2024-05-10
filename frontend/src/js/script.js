@@ -1,33 +1,56 @@
-function sendFormData(formData) {
-    var xhr = new XMLHttpRequest();
-    xhr.open('POST', 'http://127.0.0.1:1234/api/save', true);
-    xhr.setRequestHeader('Content-Type', 'application/json');
-    xhr.onreadystatechange = function () {
-        if (xhr.readyState === 4) {
-            if (xhr.status === 200) {
-                document.getElementById('response').innerHTML = `<p class="text-green-600">Thanks For Contacting Us 💖</p>`;
-            } else {
-                document.getElementById('response').innerHTML = `<p class="text-red-600">Error sending message</p>`;
-            }
-        }
-    };
-    xhr.send(JSON.stringify(formData));
+
+function test() {
+    const spanElement = document.querySelector("#typing")
+    spanElement.innerHTML = '<span>Hello</span>';
+    setTimeout(function () {
+        spanElement.innerHTML = '<span class="typed-work"></span > ';
+    }, 1700);
 }
 
-document.addEventListener('DOMContentLoaded', function () {
-    var sendMessageBtn = document.getElementById('sendMessageBtn');
-    sendMessageBtn.addEventListener('click', function (event) {
-        event.preventDefault(); // Prevent default form submission
+test();
 
-        var formData = {
-            first_name: document.querySelector('input[name="first_name"]').value,
-            last_name: document.querySelector('input[name="last_name"]').value,
-            email: document.querySelector('input[name="email"]').value,
-            phone: document.querySelector('input[name="phone"]').value,
-            message: document.querySelector('textarea[name="message"]').value
-        };
-        console.log(formData);
+function next() {
+    const nextElement = document.querySelector("#next");
+    nextElement.scrollIntoView({ behavior: "smooth" });
+}
 
-        sendFormData(formData);
+
+setTimeout(function () {
+    let typed = new Typed('.typed-work', {
+        strings: [
+            'ADVANCING HUMAN SPACEFLIGHT',
+            'STARLINK MISSION',
+            'TO MAKE LIFE MULTIPLANETARY',
+            `STARSHIP'S THIRD FLIGHT TEST`
+        ],
+        startDelay: 200,
+        typeSpeed: 40,
+        backSpeed: 20,
+        loop: true,
     });
+}, 1710)
+
+
+
+
+
+
+setTimeout(function () {
+    var btn = document.getElementById('learn-Btn');
+    btn.removeAttribute('data-aos');
+    btn.removeAttribute('data-aos-duration');
+}, 1500);
+
+const button = document.getElementById('toggleButton');
+const boxIcon1 = document.getElementById('boxIcon1');
+const boxIcon2 = document.getElementById('boxIcon2');
+
+button.addEventListener('click', function () {
+    if (boxIcon1.style.display !== 'none') {
+        boxIcon1.style.display = 'none';
+        boxIcon2.style.display = 'block';
+    } else {
+        boxIcon1.style.display = 'block';
+        boxIcon2.style.display = 'none';
+    }
 });

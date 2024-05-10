@@ -17,6 +17,9 @@ let typed = new Typed('.typed-work', {
         'TO MAKE LIFE MULTIPLANETARY',
         `STARSHIP'S THIRD FLIGHT TEST`
     ],
-    typeSpeed: 30,
+    startDelay: 1000,
+    typeSpeed: 40,
+    backSpeed: 20,
+    loop: true,
 });
 

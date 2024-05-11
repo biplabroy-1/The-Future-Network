@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2 class="font-bold text-4xl">Contact Form</h2>
+    <form id="contactForm">
+        <label for="first_name">First Name:</label><br>
+        <input class="border-2" type="text" id="first_name" name="first_name" required><br>
+        <label for="last_name">Last Name:</label><br>
+        <input class="border-2" type="text" id="last_name" name="last_name" required><br>
+        <label for="email">Email:</label><br>
+        <input class="border-2" type="email" id="email" name="email" required><br>
+        <label for="phone">Phone:</label><br>
+        <input class="border-2" type="tel" id="phone" name="phone"
+            placeholder="Format: xxx-xxx-xxxx"><br>
+        <label for="message">Message:</label><br>
+        <textarea class="border-2" id="message" name="message" required></textarea><br>
+        <br><br>
+        <button class="bg-gray-600 p-2 rounded-lg" type="submit">Submit</button>
+    </form>
+
+    <script>
+        // Function to handle form submission
+        function handleSubmit(e) {
+            e.preventDefault(); // Prevent the default form submission
+
+            // Get form values
+            const firstName = document.getElementById('first_name').value;
+            const lastName = document.getElementById('last_name').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const message = document.getElementById('message').value;
+
+            // Create an object with form values
+            const formData = {
+                first_name: firstName,
+                last_name: lastName,
+                email: email,
+                phone: phone,
+                message: message
+            };
+
+            // Log the form data (you can send it to server-side for further processing)
+            console.log('Form Data:', formData);
+
+            // Send the data to the server using fetch API
+            fetch('/api', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(formData)
+            })
+                .then(response => response.json())
+                .then(data => {
+                    console.log('Server Response:', data);
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                });
+        }
+
+        // Add event listener to the form submit event
+        document.getElementById('contactForm').addEventListener('submit', handleSubmit);
+    </script>
+
+</body>
+
+</html>

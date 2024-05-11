@@ -28,7 +28,7 @@ setTimeout(function () {
         backSpeed: 20,
         loop: true,
     });
-}, 1710)
+}, 1700)
 
 
 

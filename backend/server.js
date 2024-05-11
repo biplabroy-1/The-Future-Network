@@ -6,10 +6,9 @@ import 'dotenv/config';
 import dbConnect from './utils/dbconnect.js';
 import routes from './utils/routes.js';
 
-
-
 const app = express();
 app.use(cors());
+
 dbConnect;
 
 app.use(bodyParser.urlencoded({ extended: true }));

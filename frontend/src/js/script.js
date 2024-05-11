@@ -1,33 +1,26 @@
 
-function test() {
-    const spanElement = document.querySelector("#typing")
-    spanElement.innerHTML = '<span>Hello</span>';
-    setTimeout(function () {
-        spanElement.innerHTML = '<span class="typed-work"></span >';
-    }, 1700);
-}
-test();
-
 function next() {
     const nextElement = document.querySelector("#next");
     nextElement.scrollIntoView({ behavior: "smooth" });
 }
 
 
-setTimeout(function () {
-    let typed = new Typed('.typed-work', {
-        strings: [
-            'ADVANCING HUMAN SPACEFLIGHT',
-            'STARLINK MISSION',
-            'TO MAKE LIFE MULTIPLANETARY',
-            `STARSHIP'S THIRD FLIGHT TEST`
-        ],
-        startDelay: 200,
-        typeSpeed: 40,
-        backSpeed: 20,
-        loop: true,
-    });
-}, 1700)
+
+const typed = new Typed('#typing', {
+    strings: [
+        'ADVANCING HUMAN SPACEFLIGHT',
+        'STARLINK MISSION',
+        'TO MAKE LIFE MULTIPLANETARY',
+        `STARSHIP'S THIRD FLIGHT TEST`
+    ],
+    startDelay: 200,
+    typeSpeed: 40,
+    backSpeed: 20,
+    loop: true,
+    loopCount: Infinity,
+    showCursor: false,
+    backDelay: 800,
+});
 
 
 

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // Function to initialize typing animation
 function test() {
     // Select the span element with id "typing"
@@ -13,11 +14,15 @@ function test() {
 test();
 
 // Function to scroll to the next element smoothly
+=======
+
+>>>>>>> 175d74e5db274f437ff666098bc85ad6b99d5c31
 function next() {
     const nextElement = document.querySelector("#next");
     nextElement.scrollIntoView({ behavior: "smooth" });
 }
 
+<<<<<<< HEAD
 // Set a timeout function to execute after a delay of 1700 milliseconds
 setTimeout(function () {
     // Initialize a new Typed object to type strings
@@ -39,6 +44,28 @@ setTimeout(function () {
         loop: true,
     });
 }, 1700);
+=======
+
+
+const typed = new Typed('#typing', {
+    strings: [
+        `ADVANCING HUMAN OMMUNICTION`,
+        `PROJECT B-CAP`,
+        `TO TALK TO AI`,
+        `U-MUX 13th TEST`,
+    ],
+    typeSpeed: 40,
+    backSpeed: 20,
+    loop: true,
+    cursorChar: '|',
+    cursorClassName: 'typed-cursor', // to mane cursor color tranparent
+});
+
+
+
+
+
+>>>>>>> 175d74e5db274f437ff666098bc85ad6b99d5c31
 
 // Set timeouts to remove AOS animations after 1500 milliseconds
 setTimeout(function () {

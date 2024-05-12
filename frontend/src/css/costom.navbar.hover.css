@@ -13,3 +13,15 @@
 .navbar-hover:not(:hover) {
     opacity: 0.3;
 }
+
+ul:hover li a{
+    transform:scale(0.9);
+    opacity:0.2;
+    filter:blur(0.5px);
+}
+  
+ul li a:hover{
+    transform:scale(1.1);
+    opacity:1;
+    filter:blur(0);
+}

@@ -8,18 +8,16 @@ function next() {
 
 const typed = new Typed('#typing', {
     strings: [
-        'ADVANCING HUMAN SPACEFLIGHT',
-        'STARLINK MISSION',
-        'TO MAKE LIFE MULTIPLANETARY',
-        `STARSHIP'S THIRD FLIGHT TEST`
+        `ADVANCING HUMAN OMMUNICTION`,
+        `PROJECT B-CAP`,
+        `TO TALK TO AI`,
+        `U-MUX 13th TEST`,
     ],
-    startDelay: 200,
     typeSpeed: 40,
     backSpeed: 20,
     loop: true,
-    loopCount: Infinity,
-    showCursor: false,
-    backDelay: 800,
+    cursorChar: '|',
+    cursorClassName: 'typed-cursor', // to mane cursor color tranparent
 });
 
 

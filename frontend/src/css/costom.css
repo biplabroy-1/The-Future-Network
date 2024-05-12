@@ -12,6 +12,10 @@
     background-color: rgba(0, 0, 0, 0.4);
 }
 
+.typed-cursor {  /*to mane cursor color tranparent*/
+    color: transparent;
+}
+
 .b-section-marquee-box {
     height: 180px;
     display: flex;

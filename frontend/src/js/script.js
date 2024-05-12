@@ -1,72 +1,49 @@
 
-// Function to initialize typing animation
-function test() {
-    // Select the span element with id "typing"
-    const spanElement = document.querySelector("#typing");
-    // Set innerHTML to display "Hello" inside the span
-    spanElement.innerHTML = '<span>Hello</span>';
-    // Set a timeout to change innerHTML after 1700 milliseconds
-    setTimeout(function () {
-        spanElement.innerHTML = '<span class="typed-work"></span >';
-    }, 1700);
-}
-// Call the test function
-test();
-
 // Function to scroll to the next element smoothly
-
-
 function next() {
     const nextElement = document.querySelector("#next");
     nextElement.scrollIntoView({ behavior: "smooth" });
 }
 
 
-// Set a timeout function to execute after a delay of 1700 milliseconds
-setTimeout(function () {
-    // Initialize a new Typed object to type strings
-    let typed = new Typed('.typed-work', {
-        // Array of strings to be typed
-        strings: [
-            'ADVANCING HUMAN COMMUNICTION',
-            'PROJECT B-CAP',
-            'TO TALK TO AI',
-            'U-MUX 13th TEST'
-        ],
-        // Delay before typing starts
-        startDelay: 200,
-        // Speed of typing characters
-        typeSpeed: 40,
-        // Speed of backspacing characters
-        backSpeed: 20,
-        // Whether the typing sequence should loop
-        loop: true,
-    });
-}, 1700);
 
 
 
 const typed = new Typed('#typing', {
+    strings: [
+        `ADVANCING HUMAN COMMUNICTION`,
+        `PROJECT B-CAP`,
+        `TO TALK TO AI`,
+        `U-MUX 13th TEST`,
+    ],
+
+    typeSpeed: 40,
+    backSpeed: 20,
+    loop: true,
+    cursorChar: '|',
+    cursorClassName: 'typed-cursor', // to make cursor color tranparent
+});
+
+
+const project = new Typed('#project-typing', {
     strings: [
         `ADVANCING HUMAN OMMUNICTION`,
         `PROJECT B-CAP`,
         `TO TALK TO AI`,
         `U-MUX 13th TEST`,
     ],
+
     typeSpeed: 40,
     backSpeed: 20,
     loop: true,
     cursorChar: '|',
-    cursorClassName: 'typed-cursor', // to mane cursor color tranparent
+    cursorClassName: 'typed-cursor', // to make cursor color tranparent
 });
-
-
 
 
 
 // Set timeouts to remove AOS animations after 1500 milliseconds
 setTimeout(function () {
-    var navbar = document.getElementsByClassName('navbar');
     var btn = document.getElementById('learn-Btn');
     btn.removeAttribute('data-aos');
     btn.removeAttribute('data-aos-duration');
@@ -77,7 +54,6 @@ setTimeout(function () {
     navbar.removeAttribute('data-aos-duration');
 }, 1500);
 
-// Handle scrolling event to change navbar and logo size
 var prevScrollPos = window.scrollY;
 window.addEventListener('scroll', function () {
     var currentScrollPos = window.scrollY;
@@ -91,7 +67,7 @@ window.addEventListener('scroll', function () {
         logo.classList.remove('w-32');
         logo.classList.add('w-24');
     } else {
-        // Scrolling down
+        // Scrolling down or no change
         navbar.classList.remove('h-16');
         navbar.classList.add('h-24');
         logo.classList.remove('w-24');
@@ -100,6 +76,7 @@ window.addEventListener('scroll', function () {
 
     prevScrollPos = currentScrollPos;
 });
+
 
 // Toggle button functionality to switch between two icons
 const button = document.getElementById('toggleButton');

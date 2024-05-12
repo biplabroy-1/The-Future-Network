@@ -1,0 +1,9 @@
+@font-face {
+    font-family: blanka;
+    src: url(../assets/Blanka-Regular.otf);
+}
+
+.blanka {
+    font-family: blanka;
+    letter-spacing: 0.1em;
+}

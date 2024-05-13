@@ -89,16 +89,16 @@ setInterval(adjustNavbarOnScroll, 200);
 
 
 // Toggle button functionality to switch between two icons
-const button = document.getElementById('toggleButton');
-const boxIcon1 = document.getElementById('boxIcon1');
-const boxIcon2 = document.getElementById('boxIcon2');
+// const button = document.getElementById('toggleButton');
+// const boxIcon1 = document.getElementById('boxIcon1');
+// const boxIcon2 = document.getElementById('boxIcon2');
 
-button.addEventListener('click', function () {
-    if (boxIcon1.style.display !== 'none') {
-        boxIcon1.style.display = 'none';
-        boxIcon2.style.display = 'block';
-    } else {
-        boxIcon1.style.display = 'block';
-        boxIcon2.style.display = 'none';
-    }
-});
+// button.addEventListener('click', function () {
+//     if (boxIcon1.style.display !== 'none') {
+//         boxIcon1.style.display = 'none';
+//         boxIcon2.style.display = 'block';
+//     } else {
+//         boxIcon1.style.display = 'block';
+//         boxIcon2.style.display = 'none';
+//     }
+// });

@@ -1,0 +1,104 @@
+
+.nav-hover:hover li a {
+  transform: scale(0.95);
+  opacity: 0.2;
+  filter: blur(0.5px);
+}
+
+.nav-hover li a:hover {
+  transform: scale(1);
+  opacity: 1;
+  filter: blur(0);
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0;
+  padding: 0;
+}
+
+  
+  /* navbar regular css start */
+  .site-navbar ul {
+    list-style: none;
+    display: flex;
+  }
+ 
+  /* navbar regular css end */
+  
+  
+  /* nav-toggler css start */
+  .nav-toggler {
+    padding: 5px;
+    background-color: transparent;
+    cursor: pointer;
+    height: 30px;
+    display: none;
+  }
+  .nav-toggler span, 
+  .nav-toggler span:before, 
+  .nav-toggler span:after {
+    width: 28px;
+    height: 3px;
+    background-color: #fff;
+    display: block;
+    transition: .5s;
+  }
+  .nav-toggler span:before {
+    content: '';
+    transform: translateY(-8px);
+  }
+  .nav-toggler span:after {
+    content: '';
+    transform: translateY(5px);
+  }
+  .nav-toggler.toggler-open span {
+    background-color: transparent;
+  }
+  .nav-toggler.toggler-open span:before {
+    transform: translateY(0px) rotate(45deg);
+  }
+  .nav-toggler.toggler-open span:after {
+    transform: translateY(-3px) rotate(-45deg);
+  }
+
+  
+
+@media screen and (max-width: 2440px) {
+  .container {
+    max-width: 720px;
+  }
+  .nav-toggler{
+    display: block;
+    z-index: 1;
+  }
+  .site-navbar {
+    min-height: 60px;
+  }
+  .site-navbar ul {
+    position: absolute;
+    width: 260px;
+    height: calc(100vh - 60px);
+    right: 0;
+    top: 65px;
+    flex-direction: column;
+    align-items: start;
+    background-color: rgba(0,0,0,.45);
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+  }
+  .site-navbar ul li {
+    width: 100%;
+    text-align: start;
+  }
+
+  .site-navbar ul li a {
+    padding: 25px;
+  }
+  .site-navbar ul.open {
+    max-height: 100vh;
+    overflow: visible;
+  }  
+}

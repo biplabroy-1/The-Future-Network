@@ -54,28 +54,38 @@ setTimeout(function () {
     navbar.removeAttribute('data-aos-duration');
 }, 1500);
 
-var prevScrollPos = window.scrollY;
-window.addEventListener('scroll', function () {
-    var currentScrollPos = window.scrollY;
+function adjustNavbarOnScroll() {
+    var prevScrollPos = window.scrollY;
     var navbar = document.getElementById('navbar');
     var logo = document.getElementById('logo');
 
-    if (currentScrollPos > prevScrollPos) {
-        // Scrolling up
-        navbar.classList.remove('h-24');
-        navbar.classList.add('h-16');
-        logo.classList.remove('w-32');
-        logo.classList.add('w-24');
-    } else {
-        // Scrolling down or no change
-        navbar.classList.remove('h-16');
-        navbar.classList.add('h-24');
-        logo.classList.remove('w-24');
-        logo.classList.add('w-32');
-    }
+    window.addEventListener('scroll', function () {
+        var currentScrollPos = window.scrollY;
 
-    prevScrollPos = currentScrollPos;
-});
+        if (currentScrollPos > prevScrollPos) {
+            // Scrolling up
+            navbar.classList.remove('h-24');
+            navbar.classList.add('h-16');
+            logo.classList.remove('w-32');
+            logo.classList.add('w-24');
+        } else {
+            // Scrolling down or no change
+            navbar.classList.remove('h-16');
+            navbar.classList.add('h-24');
+            logo.classList.remove('w-24');
+            logo.classList.add('w-32');
+        }
+
+        prevScrollPos = currentScrollPos;
+    });
+}
+
+// Call the function initially
+adjustNavbarOnScroll();
+
+// Call the function every 500ms
+setInterval(adjustNavbarOnScroll, 200);
+
 
 
 // Toggle button functionality to switch between two icons

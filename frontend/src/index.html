@@ -32,7 +32,7 @@
               fill="white" />
           </svg>
         </a>
-        <div class="hidden lg:flex text-base">
+        <div class="hidden lg:flex text-base nav-hover">
           <ul class="my-0 flex uppercase text-sm/[13px]">
             <li class="duration-500"><a href="#" class="relative p-3 block">Our philosophy</a></li>
             <li class="duration-500"><a href="#" class="relative p-3 block">Nuro markating</a></li>
@@ -43,6 +43,7 @@
             <li class="duration-500"><a href="#" class="relative p-3 block">Contact us</a></li>
           </ul>
         </div>
+
         <button id="toggleButton" class="p-3 center rounded-full duration-300 lg:hidden">
           <box-icon id="boxIcon1" name='menu' color='#ffffff' size="md"></box-icon>
           <box-icon id="boxIcon2" class="hidden" name='x' color='#ffffff' size="md"></box-icon>
@@ -71,6 +72,35 @@
             fill="white" />
         </svg>
       </button>
+
+
+      <!-- make a nav for smaller device -->
+      <div id="mobile-nav" class=" absolute top-24 right-0">
+        <nav class="flex w-56 flex-col justify-between items-center gap-4 py-5 bg-white">
+          <a class="w-full text-center" href="">
+            Our philosophy
+          </a>
+          <a class="w-full text-center" href="">
+            Nuro markating
+          </a>
+          <a class="w-full text-center" href="">
+            AGI
+          </a>
+          <a class="w-full text-center" href="">
+            Cognitive Computing
+          </a>
+          <a class="w-full text-center" href="">
+            Opertunitiues
+          </a>
+          <a class="w-full text-center" href="">
+            Learn
+          </a>
+          <a class="w-full text-center" href="">
+            Contact Us
+          </a>
+        </nav>
+      </div>
+
     </header>
 
 
@@ -84,7 +114,7 @@
     </section>
 
 
-    <section class="hero-section">
+    <section data-aos="zoom-in" data-aos-duration="1300" class="hero-section">
       <div class="cardzzs-grid">
         <a class="cardzz" href="#">
           <div class="cardzzs-background photo1">

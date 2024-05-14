@@ -12,7 +12,8 @@
     background-color: rgba(0, 0, 0, 0.4);
 }
 
-.typed-cursor {  /*to mane cursor color tranparent*/
+.typed-cursor {
+    /*to make cursor color tranparent*/
     color: transparent;
 }
 
@@ -80,9 +81,3 @@ input[type=number] {
     border: 1px solid rgb(30 58 138);
     color: rgb(30 58 138);
 }
-
-
-
-
-
-

@@ -1,0 +1,140 @@
+/* section1 learn more btn  */
+.animation-btn {
+    position: relative;
+    display: inline-block;
+    margin: 1.75rem auto 0;
+    padding: 1rem 1.5rem;
+    overflow: hidden;
+    text-transform: uppercase;
+}
+  
+.animation-btn-span {
+    display: block;
+    position: absolute;
+}
+  
+.animation-btn-span:nth-child(1) {
+    width: 100%;
+    height: 2px;
+    top: 0;
+    right: 0;
+    background: linear-gradient(270deg, transparent, #fff);
+    animation: animate1 1s linear infinite;
+}
+
+@keyframes animate1 {
+    0% {
+      right: -100%;
+    }
+    50%,
+    100% {
+      right: 100%;
+    }
+}
+  
+.animation-btn-span:nth-child(2) {
+    width: 2px;
+    height: 100%;
+    top: -100%;
+    left: 0;
+    background: linear-gradient(180deg, transparent, #fff);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+  
+@keyframes animate2 {
+    0% {
+        top: -100%;
+    }
+    50%,
+    100% {
+        top: 100%;
+    }
+}
+  
+.animation-btn-span:nth-child(3) {
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(90deg, transparent, #fff);
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.5s;
+}
+  
+@keyframes animate3 {
+    0% {
+        left: -100%;
+    }
+    50%,
+    100% {
+        left: 100%;
+    }
+}
+  
+.animation-btn-span:nth-child(4) {
+    width: 2px;
+    height: 100%;
+    bottom: -100%;
+    right: 0;
+    background: linear-gradient(360deg, transparent, #fff);
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+  
+@keyframes animate4 {
+    0% {
+        bottom: -100%;
+    }
+    50%,
+    100% {
+        bottom: 100%;
+    }
+}
+  
+:active, :hover, :focus {
+    outline: 0!important;
+    outline-offset: 0;
+}
+  ::before,
+  ::after {
+    position: absolute;
+    content: "";
+}
+
+/* hover effect  */
+  
+.animation-btn #animation-btn-text {         
+    position: relative;
+    display: inline-block;
+    font-size: 17px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    top: 0; left: 0;
+    width: 100%;
+    transition: 0.3s;
+}
+  
+
+.animation-btn::before {
+    background-color: #fff;
+    transition: 0.3s ease-out;
+}
+.animation-btn:hover {
+    color: #000;
+}
+
+.animation-btn #animation-btn-text:hover {
+    color: #000;
+    transition: 0.2s 0.1s;
+}
+  
+.animation-btn.hover-slide-up::before {
+    bottom: 0; left: 0; right: 0; 
+    height: 0%; width: 100%;
+}
+.animation-btn.hover-slide-up:hover::before {
+    top: 0; left: 0; right: 0; 
+    height: 100%;
+}
+  

@@ -81,3 +81,110 @@ input[type=number] {
     border: 1px solid rgb(30 58 138);
     color: rgb(30 58 138);
 }
+
+
+/* section1 learn more btn  */
+.animation-btn {
+    position: relative;
+    display: inline-block;
+    margin: 1.75rem auto 0;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: #fff;
+    overflow: hidden;
+    text-transform: uppercase;
+    filter: hue-rotate(340deg);
+    transition: all 0.5s ease;
+  }
+  
+  .animation-btn:hover {
+    color: #000;
+    background: #fff;
+  }
+  #animation-btn-span {
+    display: block;
+    position: absolute;
+  }
+  
+  #animation-btn-span:nth-child(1) {
+    width: 100%;
+    height: 2px;
+    top: 0;
+    right: 0;
+    background: linear-gradient(270deg, transparent, #fff);
+    animation: animate1 1s linear infinite;
+  }
+  
+  @keyframes animate1 {
+    0% {
+      right: -100%;
+    }
+    50%,
+    100% {
+      right: 100%;
+    }
+  }
+  
+  #animation-btn-span:nth-child(2) {
+    width: 2px;
+    height: 100%;
+    top: -100%;
+    left: 0;
+    background: linear-gradient(180deg, transparent, #fff);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+  }
+  
+  @keyframes animate2 {
+    0% {
+      top: -100%;
+    }
+    50%,
+    100% {
+      top: 100%;
+    }
+  }
+  
+  #animation-btn-span:nth-child(3) {
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(90deg, transparent, #fff);
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.5s;
+  }
+  
+  @keyframes animate3 {
+    0% {
+      left: -100%;
+    }
+    50%,
+    100% {
+      left: 100%;
+    }
+  }
+  
+  #animation-btn-span:nth-child(4) {
+    width: 2px;
+    height: 100%;
+    bottom: -100%;
+    right: 0;
+    background: linear-gradient(360deg, transparent, #fff);
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.75s;
+  }
+  
+  @keyframes animate4 {
+    0% {
+      bottom: -100%;
+    }
+    50%,
+    100% {
+      bottom: 100%;
+    }
+  }
+  

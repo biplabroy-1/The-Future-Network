@@ -91,18 +91,18 @@
         bottom: 100%;
     }
 }
-  
-:active, :hover, :focus {
+
+/* hover effect  */
+
+.animation-btn:active, :hover, :focus {
     outline: 0!important;
     outline-offset: 0;
 }
-  ::before,
-  ::after {
+.animation-btn::before,
+.animation-btn::after {
     position: absolute;
     content: "";
 }
-
-/* hover effect  */
   
 .animation-btn #animation-btn-text {         
     position: relative;

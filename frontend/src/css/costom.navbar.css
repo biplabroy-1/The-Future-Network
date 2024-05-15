@@ -69,6 +69,12 @@
 }
 
 
+@media screen and (max-width: 500px){
+  .navbar{
+    justify-content: space-between;
+    padding: 0 1.5rem !important;
+  }
+}
 
 @media screen and (max-width: 1030px) {
   .container {

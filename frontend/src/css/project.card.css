@@ -25,23 +25,11 @@
 
 .cardzzs-grid {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-column-gap: var(--spacing-l);
     grid-row-gap: var(--spacing-l);
     max-width: var(--width-container);
     width: 100%;
-}
-
-@media(min-width: 540px) {
-    .cardzzs-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media(min-width: 960px) {
-    .cardzzs-grid {
-        grid-template-columns: repeat(4, 1fr);
-    }
 }
 
 .cardzz {
@@ -73,6 +61,14 @@
         transform 200ms linear;
 }
 
+@media(min-width: 540px) {
+    .cardzzs-background .cardzz__content{
+        min-height: 40px !important;
+    }
+}
+
+
+
 .cardzz:hover {
     box-shadow: 0px 30px 18px -8px rgba(0, 0, 0, 0.6);
     transform: scale(1.10, 1.10);
@@ -102,11 +98,27 @@
 
 .cardzz__heading {
     color: var(--text-lighter);
-    font-size: 1.9rem;
+    font-size: 1.2rem;
     text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
     line-height: 1.4;
     word-spacing: 100vw;
 }
+
+@media(min-width: 540px) {
+    .cardzz__heading {
+        font-size: 1.6rem !important;
+    }
+}
+
+@media(min-width: 960px) {
+    .cardzz__heading {
+        font-size: 1.9rem !important;
+    }
+    .cardzzs-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
 
 .photo1 {
     background-image: url(https://images.unsplash.com/photo-1557177324-56c542165309?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80)

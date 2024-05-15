@@ -20,7 +20,7 @@
 
 </head>
 
-<body class="bg-black">
+<body class="bg-black overflow-x-hidden">
 
   <head class="min-h-screen">
     <nav class="container overflow-hidden relative">
@@ -52,26 +52,26 @@
         </button>
       </div>
     </nav>
-    <video class="w-screen h-screen object-cover brightness-50" src="./assets/backGroundVideo.mp4" playsinline autoplay muted
-      loop>
+    <video class="w-screen h-screen object-cover brightness-50" src="./assets/backGroundVideo.mp4" playsinline autoplay
+      muted loop>
     </video>
     <div class="absolute top-1/2 pl-20 text-white">
       <h1 data-aos="slide-right" data-aos-duration="1300" class="uppercase my-5 ">RECENT RESERACH
       </h1>
       <h1 data-aos="slide-right" data-aos-duration="1100" class="uppercase my-5 text-4xl font-bold blanka"><span
-        id="typing"></span>
+          id="typing"></span>
       </h1>
-<div class="btn-holder">
-  <button data-aos="slide-right" href="#" class="animation-btn hover-slide-up">
-    <span class="animation-btn-span"></span>
-    <span class="animation-btn-span"></span>
-    <span class="animation-btn-span"></span>
-    <span class="animation-btn-span"></span>
-    <span id="animation-btn-text">Learn more</span>
-  </button>
+      <div class="btn-holder">
+        <button data-aos="slide-right" href="#" class="animation-btn hover-slide-up">
+          <span class="animation-btn-span"></span>
+          <span class="animation-btn-span"></span>
+          <span class="animation-btn-span"></span>
+          <span class="animation-btn-span"></span>
+          <span id="animation-btn-text">Learn more</span>
+        </button>
 
-</div>
-      
+      </div>
+
     </div>
 
 
@@ -91,7 +91,7 @@
     <section data-aos="slide-right" data-aos-duration="1300" class="px-20 mt-20">
       <div class="flex flex-col gap-10">
         <h1 class="text-3xl font-bold blanka text-white">Project</h1>
-        <h2 class="text-3xl font-semibold text-white text-sm"><span id="project-typing"></span></h2>
+        <h2 class="text-2xl font-semibold text-white"><span id="project-typing"></span></h2>
       </div>
     </section>
 
@@ -135,7 +135,7 @@
     </main>
 
 
-    <section data-aos="slide-right" data-aos-duration="1300" class="px-20 mt-20">
+    <section data-aos="slide-left" data-aos-duration="1300" class="px-20 mt-20">
       <div class="flex flex-col gap-10">
         <h1 class="text-3xl font-bold blanka text-white">Our Teams</h1>
         <h2 class="text-3xl font-semibold"><span id="project-typing"></span></h2>
@@ -259,8 +259,7 @@
 
 
     <!-- form  -->
-    <section
-      class="flex justify-center items-center h-full min-h-auto ">
+    <section class="flex justify-center items-center h-full min-h-auto ">
       <div class="container mx-auto my-4 px-4 lg:px-20 ">
         <form data-aos="zoom-in" action="/save/api" method="post"
           class="w-full p-8 my-4 md:px-12 lg:w-9/12 mr-auto rounded-2xl shadow-2xl bg-gradient-to-br from-[#130053] to-[#652ec7]">

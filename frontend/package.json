@@ -1,6 +1,8 @@
 {
   "name": "frontend",
   "version": "0.0.0",
+  "private": true,
+  "type": "module",
   "scripts": {
     "dev": "vite src",
     "build": "vite build src",
@@ -59,6 +61,7 @@
     "jiti": "^1.21.0",
     "lilconfig": "^2.1.0",
     "lines-and-columns": "^1.2.4",
+    "locomotive-scroll": "^4.1.4",
     "lru-cache": "^10.2.2",
     "merge2": "^1.4.1",
     "micromatch": "^4.0.5",

@@ -1,9 +1,11 @@
 * {
     transition: all 300ms;
 }
-body{
-    background-color: rgb(15 23 42);;
+
+body {
+    background-color: #2a3439;
 }
+
 .center {
     display: flex;
     justify-content: center;
@@ -11,7 +13,7 @@ body{
 }
 
 .navbar {
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: #00000080;
 }
 
 .typed-cursor {
@@ -84,7 +86,6 @@ input[type=number] {
     color: rgb(30 58 138);
 }
 
-.projects h2{
+.projects h2 {
     height: 3rem;
 }
-

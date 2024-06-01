@@ -1,8 +1,7 @@
 import express from 'express';
-import path, { join } from 'path'; // Add { join } here
 import bodyParser from 'body-parser';
 import { fileURLToPath } from 'url';
-import { dirname } from 'path'; // Remove join from here
+import path, { dirname } from 'path'; // Remove join from here
 import Contact from './contact.models.js';
 
 const __filename = fileURLToPath(import.meta.url);

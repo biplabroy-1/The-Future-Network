@@ -5,10 +5,6 @@ function next() {
     nextElement.scrollIntoView({ behavior: "smooth" });
 }
 
-
-
-
-
 const typed = new Typed('#typing', {
     strings: [
         `ADVANCING HUMAN COMMUNICTION`,
@@ -44,11 +40,6 @@ const project = new Typed('#project-typing', {
 
 // Set timeouts to remove AOS animations after 1500 milliseconds
 setTimeout(function () {
-    var btn = document.getElementById('learn-Btn');
-    btn.removeAttribute('data-aos');
-    btn.removeAttribute('data-aos-duration');
-}, 1500);
-setTimeout(function () {
     var navbar = document.getElementById('navbar');
     navbar.removeAttribute('data-aos');
     navbar.removeAttribute('data-aos-duration');
@@ -62,6 +53,16 @@ function adjustNavbarOnScroll() {
 
     window.addEventListener('scroll', function () {
         var currentScrollPos = window.scrollY;
+
+        if (window.scrollY < window.innerHeight) {
+            navbar.classList.add('bg-transparent');
+            navbar.classList.remove('navbar');
+        }
+        else {
+            navbar.classList.remove('bg-transparent');
+            navbar.classList.add('navbar');
+
+        }
 
         if (currentScrollPos > prevScrollPos) {
             // Scrolling up

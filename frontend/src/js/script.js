@@ -1,3 +1,23 @@
+window.onresize = () => {
+    lenisFn();
+}
+
+function lenisFn() {
+    const lenis = new Lenis({
+        wheelMultiplier: 2,
+        duration: 1.5,
+        easing: (x) => 1 - Math.pow(1 - x, 5),
+    })
+
+    function raf(time) {
+        lenis.raf(time)
+        requestAnimationFrame(raf)
+    }
+
+    requestAnimationFrame(raf)
+}
+
+lenisFn();
 
 // Function to scroll to the next element smoothly
 function next() {

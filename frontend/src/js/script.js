@@ -4,8 +4,8 @@ window.onresize = () => {
 
 function lenisFn() {
     const lenis = new Lenis({
-        wheelMultiplier: 2,
-        duration: 1.5,
+        wheelMultiplier: 1,
+        duration: 1,
         easing: (x) => 1 - Math.pow(1 - x, 5),
     })
 

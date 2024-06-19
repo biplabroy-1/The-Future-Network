@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+
 * {
     transition: 300ms;
 }
 
 :root {
     --background-dark: #2d3548;
-    --text-light: rgba(255, 255, 255, 0.6);
+    --text-light: rgba(255, 255, 255, 0.838);
     --text-lighter: rgba(255, 255, 255, 0.9);
     --spacing-s: 8px;
     --spacing-m: 16px;
@@ -14,37 +16,49 @@
     --width-container: 1200px;
 }
 
-
-.hero-section {
+.hero-section-project {
     align-items: flex-start;
     display: flex;
     min-height: 100%;
     justify-content: center;
+    font-family: 'Montserrat', sans-serif;
     padding: var(--spacing-xxl) var(--spacing-l);
 }
 
-.cardzzs-grid {
+.card-grid-project {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     grid-column-gap: var(--spacing-l);
     grid-row-gap: var(--spacing-l);
     max-width: var(--width-container);
     width: 100%;
 }
 
-.cardzz {
+@media (min-width: 540px) {
+    .card-grid-project {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 960px) {
+    .card-grid-project {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.card-project {
     list-style: none;
     position: relative;
 }
 
-.cardzz:before {
+.card-project:before {
     content: '';
     display: block;
     padding-bottom: 150%;
     width: 100%;
 }
 
-.cardzzs-background {
+.card-background-project {
     background-size: cover;
     background-position: center;
     border-radius: var(--spacing-l);
@@ -61,77 +75,62 @@
         transform 200ms linear;
 }
 
-@media(min-width: 540px) {
-    .cardzzs-background .cardzz__content{
-        min-height: 40px !important;
-    }
-}
-
-
-
-.cardzz:hover {
+.card-project:hover {
     box-shadow: 0px 30px 18px -8px rgba(0, 0, 0, 0.6);
-    transform: scale(1.10, 1.10);
+    transform: scale(1.05, 1.05);
 }
 
-.cardzz:hover .cardzzs-background {
-    transform: scale(1.05) translateZ(0);
+.card-project:hover .card-background-project {
+    transform: scale(1.05);
 }
 
-.cardzzs-grid:hover>.cardzz:not(:hover) .cardzzs-background {
+.card-grid-project:hover>.card-project:not(:hover) .card-background-project {
     filter: brightness(0.5) saturate(0) contrast(1.2) blur(20px);
 }
 
-.cardzz__content {
+.card-content-project {
     left: 0;
     padding: var(--spacing-l);
     position: absolute;
     top: 0;
+    opacity: 1;
+    /* Set initial opacity to 1 */
+    transition: opacity 200ms linear;
 }
 
-.cardzz__category {
+.card-grid-project:hover>.card-project:not(:hover) .card-content-project {
+    opacity: 0;
+    /* Hide content when card is not hovered */
+}
+
+.card-category-project {
     color: var(--text-light);
+    font-weight: bold;
     font-size: 0.9rem;
     margin-bottom: var(--spacing-s);
     text-transform: uppercase;
 }
 
-.cardzz__heading {
+.card-heading-project {
     color: var(--text-lighter);
     font-size: 1.2rem;
     text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
     line-height: 1.4;
-    word-spacing: 100vw;
-}
-
-@media(min-width: 540px) {
-    .cardzz__heading {
-        font-size: 1.6rem !important;
-    }
-}
-
-@media(min-width: 960px) {
-    .cardzz__heading {
-        font-size: 1.9rem !important;
-    }
-    .cardzzs-grid {
-        grid-template-columns: repeat(4, 1fr);
-    }
 }
 
 
-.photo1 {
+.photo-project-1 {
     background-image: url(https://images.unsplash.com/photo-1557177324-56c542165309?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80)
 }
 
-.photo2 {
-    background-image: url(https://images.unsplash.com/photo-1557177324-56c542165309?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80)
+.photo-project-2 {
+    background-image: url(https://images.unsplash.com/photo-1557187666-4fd70cf76254?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60)
 }
 
-.photo3 {
-    background-image: url(https://images.unsplash.com/photo-1557177324-56c542165309?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80)
+.photo-project-3 {
+    background-image: url(https://images.unsplash.com/photo-1556680262-9990363a3e6d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60)
 }
 
-.photo4 {
-    background-image: url(https://images.unsplash.com/photo-1557177324-56c542165309?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80)
+.photo-project-4 {
+    background-image: url(https://images.unsplash.com/photo-1557004396-66e4174d7bf6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60)
 }

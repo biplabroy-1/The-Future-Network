@@ -43,7 +43,7 @@ const typed = new Typed('#typing', {
 
 const project = new Typed('#project-typing', {
     strings: [
-        `ADVANCING HUMAN OMMUNICTION`,
+        `ADVANCING HUMAN COMMUNICTION`,
         `PROJECT B-CAP`,
         `TO TALK TO AI`,
         `U-MUX 13th TEST`,

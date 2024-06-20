@@ -21,6 +21,7 @@
   <link rel="stylesheet" href="./css/costom.css">
   <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" href="./css/team.css">
+  <link rel="stylesheet" href="./css/team.css">
   <style>
     @font-face {
       font-family: blanka;
@@ -35,6 +36,8 @@
 </head>
 
 <body class="overflow-x-hidden">
+  <div id="cursor"></div>
+  <div id="cursor-border"></div>
 
   <head class="min-h-screen">
     <nav class="container overflow-hidden relative">
@@ -49,13 +52,14 @@
         </a>
 
         <ul id="small-nav" class="my-0 uppercase text-sm/[13px] hidden lg:flex nav-hover">
-          <li class="duration-500"><a href="#" class="relative p-3 block">Our philosophy</a></li>
-          <li class="duration-500"><a href="#" class="relative p-3 block">Nuro markating</a></li>
-          <li class="duration-500"><a href="#" class="relative p-3 block">AGI</a></li>
-          <li class="duration-500"><a href="#" class="relative p-3 block">Cognitive Computing</a></li>
-          <li class="duration-500"><a href="#" class="relative p-3 block">Opertunitiues</a></li>
-          <li class="duration-500"><a href="#" class="relative p-3 block">Learn</a></li>
-          <li class="duration-500"><a href="#" class="relative p-3 block">Contact us</a></li>
+          <li data-cursor="pointer" class="duration-500"><a href="#" class="relative p-3 block">Our philosophy</a></li>
+          <li data-cursor="pointer" class="duration-500"><a href="#" class="relative p-3 block">Nuro markating</a></li>
+          <li data-cursor="pointer" class="duration-500"><a href="#" class="relative p-3 block">AGI</a></li>
+          <li data-cursor="pointer" class="duration-500"><a href="#" class="relative p-3 block">Cognitive Computing</a>
+          </li>
+          <li data-cursor="pointer" class="duration-500"><a href="#" class="relative p-3 block">Opertunitiues</a></li>
+          <li data-cursor="pointer" class="duration-500"><a href="#" class="relative p-3 block">Learn</a></li>
+          <li data-cursor="pointer" class="duration-500"><a href="#" class="relative p-3 block">Contact us</a></li>
         </ul>
 
         <!-- nav-toggler for mobile version only -->
@@ -83,7 +87,7 @@
       </div>
 
 
-      <div class="btn-holder overflow-hidden">
+      <div data-cursor="pointer2" class="btn-holder overflow-hidden">
         <button data-aos="slide-right" href="#" class="animation-btn hover-slide-up">
           <span class="animation-btn-span"></span>
           <span class="animation-btn-span"></span>
@@ -428,7 +432,8 @@
   <script type="module" src="./js/mobile.navbar.js"></script>
   <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script src="https://unpkg.com/@studio-freight/lenis@1.0.39/dist/lenis.min.js"></script>
+  <!-- <script src="https://unpkg.com/@studio-freight/lenis@1.0.39/dist/lenis.min.js"></script> -->
+  <script src="./js/curser.js"></script>
   <script>
     AOS.init({
       duration: 1200,

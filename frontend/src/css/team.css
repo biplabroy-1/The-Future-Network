@@ -17,6 +17,8 @@
 .team h3 {
     color: #e6e6e6;
     text-align: center;
+    font-size: 1.25rem/* 20px */;
+    line-height: 1.75rem/* 28px */;
 }
 
 .team section {
@@ -30,7 +32,7 @@
 
 .team section .member {
     margin-right: -10px;
-    height: 9rem;
+    height: 5rem;
     aspect-ratio: 1;
     background: var(--img-url) center center;
     background-size: cover;
@@ -40,7 +42,20 @@
     transition: 0.5s;
 }
 
+@media (min-width: 768px) {
+    .team section .member {
+        height: 9rem;
+    }
 
+    .team h3 {
+        font-size: 1.875rem
+            /* 30px */
+        ;
+        line-height: 2.25rem
+            /* 36px */
+        ;
+    }
+}
 
 .team section .member:hover {
     margin-top: -2rem;

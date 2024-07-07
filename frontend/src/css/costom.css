@@ -26,7 +26,7 @@ body {
 }
 
 #cursor-border {
-    --size: 50px;
+    --size: 40px;
     position: fixed;
     top: calc(var(--size) / -2);
     left: calc(var(--size) / -2);

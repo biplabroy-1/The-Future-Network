@@ -1,5 +1,5 @@
-const cursor = document.querySelector("#cursor");
 const cursorBorder = document.querySelector("#cursor-border");
+const cursor = document.querySelector("#cursor");
 const cursorPos = { x: 0, y: 0 };
 const cursorBorderPos = { x: 0, y: 0 };
 
@@ -7,11 +7,14 @@ document.addEventListener("mousemove", (e) => {
     cursorPos.x = e.clientX;
     cursorPos.y = e.clientY;
 
+    cursorBorder.style.display = "block";
+    cursor.style.display = "block";
+
     cursor.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
 });
 
 requestAnimationFrame(function loop() {
-    const easting = 8;
+    const easting = 10;
     cursorBorderPos.x += (cursorPos.x - cursorBorderPos.x) / easting;
     cursorBorderPos.y += (cursorPos.y - cursorBorderPos.y) / easting;
 
@@ -34,6 +37,6 @@ document.querySelectorAll("[data-cursor]").forEach((item) => {
     item.addEventListener("mouseout", (e) => {
         cursorBorder.style.backgroundColor = "unset";
         cursorBorder.style.mixBlendMode = "unset";
-        cursorBorder.style.setProperty("--size", "50px");
+        cursorBorder.style.setProperty("--size", "40px");
     });
 });

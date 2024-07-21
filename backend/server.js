@@ -3,13 +3,13 @@ import express from 'express';
 import bodyParser from 'body-parser';
 import cors from 'cors';
 import 'dotenv/config';
-import dbConnect from './utils/dbconnect.js';
+// import dbConnect from './utils/dbconnect.js';
 import routes from './utils/routes.js';
 
 const app = express();
 app.use(cors());
 
-dbConnect;
+// dbConnect;
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
